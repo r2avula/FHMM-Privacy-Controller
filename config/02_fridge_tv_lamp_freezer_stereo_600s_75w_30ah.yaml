@@ -1,0 +1,32 @@
+minPowerDemandInW: 0
+maxPowerDemandInW: 3000
+powerQuantPU: 75
+slotIntervalInSeconds: 600
+horizonsPerDay: 1
+paramsPrecision: 1e-6
+beliefSpacePrecision: 0.25
+minLikelihoodFilter: 0.0001
+minLogParam: -inf
+maxCostParam: inf
+
+knownApplianceNames: ['Fridge','Freezer','Lamp','Laptop','TV','Dishwasher','Water kettle']
+dataset: 'eco'
+houseIndices: [2]
+dataStartDate: '2012-06-01'
+dataEndDate: '2013-01-31'
+testEvaluationHourIndexBoundaries: [1 24]
+
+applianceNames: ['Fridge','TV','Lamp','Freezer','Stereo']
+applianceON_powerThreshold: [5,5,5,5,5]
+privateApplianceNames: ['TV','Stereo']
+
+converterEfficiency: 95
+batteryNominalVoltage: 48
+batteryRatedCapacityInAh: 30
+cell_nominalVoltage: 4
+cell_1C_capacityInAh: 1.8048
+cell_SOC_high: 0.9
+cell_SOC_low: 0.1
+meanCellInternalResistance: 0.046
+ess_geom_spread_cdf_lim: 0.95
+ess_geom_spread_range: 5
